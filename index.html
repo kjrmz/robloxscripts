@@ -169,26 +169,26 @@
     </div>
   </div>
 
-  <!-- Adopt Me Section -->
-  <div id="adoptme" class="script-section">
-    <div class="script-title">Adopt Me Scripts</div>
-    <!-- 5 Scripts -->
-    <script>
-      const adoptScripts = [1, 2, 3, 4, 5];
-      adoptScripts.forEach(i => {
-        document.write(`
-          <div class='script-box'>
-            <img src='adoptme1.jpg' alt='Adopt Me Script ${i}'>
-            <button class='copy-btn' onclick="copyScript('script_code_${i}')">Copy Script</button>
-            <div class='extra-btns'>
-              <a class='extra-btn' href='https://www.youtube.com/@skibiditech007' target='_blank'>Tutorial Download (IOS/ANDROID)</a>
-              <a class='extra-btn' href='https://deltaexploits.gg/' target='_blank'>Android/IOS Delta Executor!</a>
-            </div>
+<!-- Adopt Me Section -->
+<div id="adoptme" class="script-section">
+  <div class="script-title">Adopt Me Scripts</div>
+  <!-- 5 Scripts with Unique Thumbnails -->
+  <script>
+    const adoptScripts = [1, 2, 3, 4, 5];
+    adoptScripts.forEach(i => {
+      document.write(`
+        <div class='script-box'>
+          <img src='images/adoptme${i}.png' alt='Adopt Me Script ${i}'>
+          <button class='copy-btn' onclick="copyScript('script_code_${i}')">Copy Script</button>
+          <div class='extra-btns'>
+            <a class='extra-btn' href='https://www.youtube.com/@skibiditech007' target='_blank'>Tutorial Download (IOS/ANDROID)</a>
+            <a class='extra-btn' href='https://deltaexploits.gg/' target='_blank'>Android/IOS Delta Executor!</a>
           </div>
-        `);
-      });
-    </script>
-  </div>
+        </div>
+      `);
+    });
+  </script>
+</div>
 
   <!-- MM2 Section -->
   <div id="mm2" class="script-section">
