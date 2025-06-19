@@ -173,39 +173,55 @@
 <div id="adoptme" class="script-section">
   <div class="script-title">Adopt Me Scripts</div>
   <!-- 5 Scripts with Unique Thumbnails -->
-  <script>
-    const adoptScripts = [1, 2, 3, 4, 5];
-    adoptScripts.forEach(i => {
-      document.write(`
-        <div class='script-box'>
-          <img src='images/adoptme${i}.jpg' alt='Adopt Me Script ${i}'>
-          <button class='copy-btn' onclick="copyScript('script_code_${i}')">Copy Script</button>
-          <div class='extra-btns'>
-            <a class='extra-btn' href='https://www.youtube.com/@skibiditech007' target='_blank'>Tutorial Download (IOS/ANDROID)</a>
-            <a class='extra-btn' href='https://deltaexploits.gg/' target='_blank'>Android/IOS Delta Executor!</a>
-          </div>
+<script>
+  const adoptScriptCodes = [
+    `-- Adopt Me Script 1\nprint("Script 1 active!")`,
+    `-- Adopt Me Script 2\nprint("Script 2 activated!")`,
+    `-- Adopt Me Script 3\nprint("Script 3 running!")`,
+    `-- Adopt Me Script 4\nprint("Script 4 working!")`,
+    `-- Adopt Me Script 5\nprint("Script 5 executing!")`
+  ];
+
+  adoptScriptCodes.forEach((script, i) => {
+    const num = i + 1;
+    document.write(`
+      <div class='script-box'>
+        <img src='images/adoptme${num}.jpg' alt='Adopt Me Script ${num}'>
+        <button class='copy-btn' onclick="copyScript(\`${script}\`)">Copy Script</button>
+        <div class='extra-btns'>
+          <a class='extra-btn' href='https://www.youtube.com/@skibiditech007' target='_blank'>Tutorial Download (IOS/ANDROID)</a>
+          <a class='extra-btn' href='https://deltaexploits.gg/' target='_blank'>Android/IOS Delta Executor!</a>
         </div>
-      `);
-    });
-  </script>
-</div>
+      </div>
+    `);
+  });
+</script>
+
 
   <!-- MM2 Section -->
   <div id="mm2" class="script-section">
     <div class="script-title">Murder Mystery 2 Scripts</div>
     <!-- 5 Scripts -->
-    <script>
-      const mm2Scripts = [1, 2, 3, 4, 5];
-      mm2Scripts.forEach(i => {
-        document.write(`
-          <div class='script-box'>
-            <img src='your-mm2-thumb${i}.png' alt='MM2 Script ${i}'>
-            <button class='copy-btn' onclick="copyScript('mm2_script_code_${i}')">Copy Script</button>
-            <div class='extra-btns'>
-              <a class='extra-btn' href='https://www.youtube.com/@skibiditech007' target='_blank'>Tutorial Download (IOS/ANDROID)</a>
-              <a class='extra-btn' href='https://deltaexploits.gg/' target='_blank'>Android/IOS Delta Executor!</a>
-            </div>
-          </div>
+<script>
+  const mm2Scripts = [
+    `-- Murder Mystery 2 Script 1\nprint("Script 1 active!")`,
+    `-- Murder Mystery 2 Script 2\nprint("Script 2 activated!")`,
+    `-- Murder Mystery 2 Script 3\nprint("Script 3 running!")`,
+    `-- Murder Mystery 2 Script 4\nprint("Script 4 working!")`,
+    `-- Murder Mystery 2 Script 5\nprint("Script 5 executing!")`
+  ];
+
+  mm2Scripts.forEach((script, i) => {
+    const num = i + 1;
+    document.write(`
+      <div class='script-box'>
+        <img src='images/adoptme${num}.jpg' alt='Murder Mystery 2 Script ${num}'>
+        <button class='copy-btn' onclick="copyScript(\`${script}\`)">Copy Script</button>
+        <div class='extra-btns'>
+          <a class='extra-btn' href='https://www.youtube.com/@skibiditech007' target='_blank'>Tutorial Download (IOS/ANDROID)</a>
+          <a class='extra-btn' href='https://deltaexploits.gg/' target='_blank'>Android/IOS Delta Executor!</a>
+        </div>
+      </div>
         `);
       });
     </script>
