@@ -65,7 +65,7 @@
     }
     .copy-btn {
       margin-top: 10px;
-      background: #3a3a3a;
+      background: #a00000;
       color: white;
       padding: 10px;
       width: 100%;
@@ -80,7 +80,7 @@
       box-sizing: border-box;
     }
     .copy-btn:hover {
-      background: #555;
+      background: #c30000;
     }
     .extra-btns {
       margin-top: 10px;
@@ -158,14 +158,14 @@
   <div id="home" class="script-section">
     <div class="script-title">My YouTube Channels</div>
     <div class="home-card">
-      <img src="https://yt3.googleusercontent.com/a/default-user=s120-c-k-no-rj" alt="Channel 1">
+      <img src="images/ignite.png" alt="Ignite Scripts">
       <h2>Ignite Scripts</h2>
-      <a class="copy-btn" style="text-decoration: none;" href="https://www.youtube.com/@IgniteScripts" target="_blank">Visit Ignite Scripts</a>
+      <a class="copy-btn" href="https://www.youtube.com/@IgniteScripts" target="_blank">Visit Ignite Scripts</a>
     </div>
     <div class="home-card">
-      <img src="https://yt3.googleusercontent.com/a/default-user=s120-c-k-no-rj" alt="Channel 2">
+      <img src="images/shinoin.png" alt="Shinoin YT">
       <h2>Shinoin YT</h2>
-      <a class="copy-btn" style="text-decoration: none;" href="https://www.youtube.com/@Shinoinyt" target="_blank">Visit Shinoin YT</a>
+      <a class="copy-btn" href="https://www.youtube.com/@Shinoinyt" target="_blank">Visit Shinoin YT</a>
     </div>
   </div>
 
@@ -174,22 +174,22 @@
   <div class="script-title">Adopt Me Scripts</div>
   <script>
     const adoptScriptCodes = [
-      `-- Adopt Me Script 1\nprint("Script 1 active!")`,
-      `-- Adopt Me Script 2\nprint("Script 2 activated!")`,
-      `-- Adopt Me Script 3\nprint("Script 3 running!")`,
-      `-- Adopt Me Script 4\nprint("Script 4 working!")`,
-      `-- Adopt Me Script 5\nprint("Script 5 executing!")`
+      "-- Adopt Me Script 1\nprint('Script 1 active!')",
+      "-- Adopt Me Script 2\nprint('Script 2 activated!')",
+      "-- Adopt Me Script 3\nprint('Script 3 running!')",
+      "-- Adopt Me Script 4\nprint('Script 4 working!')",
+      "-- Adopt Me Script 5\nprint('Script 5 executing!')"
     ];
 
     adoptScriptCodes.forEach((script, i) => {
       const num = i + 1;
       document.write(`
         <div class='script-box'>
-          <img src='images/adoptme${num}.jpg' alt='Adopt Me Script ${num}'>
-          <button class='copy-btn' onclick="copyScript(\`${script}\`)">Copy Script</button>
-          <div class='extra-btns'>
-            <a class='extra-btn' href='https://www.youtube.com/@skibiditech007' target='_blank'>Tutorial Download (IOS/ANDROID)</a>
-            <a class='extra-btn' href='https://deltaexploits.gg/' target='_blank'>Android/IOS Delta Executor!</a>
+          <img src="images/adoptme${num}.jpg" alt="Adopt Me Script ${num}">
+          <button class="copy-btn" onclick="navigator.clipboard.writeText(\`${script}\`).then(() => alert('Copied Script ${num}!'))">Copy Script</button>
+          <div class="extra-btns">
+            <a class="extra-btn" href="https://www.youtube.com/@skibiditech007" target="_blank">Tutorial Download (IOS/ANDROID)</a>
+            <a class="extra-btn" href="https://deltaexploits.gg/" target="_blank">Android/IOS Delta Executor!</a>
           </div>
         </div>
       `);
@@ -202,28 +202,29 @@
   <div class="script-title">Murder Mystery 2 Scripts</div>
   <script>
     const mm2Scripts = [
-      `-- Murder Mystery 2 Script 1\nprint("Script 1 active!")`,
-      `-- Murder Mystery 2 Script 2\nprint("Script 2 activated!")`,
-      `-- Murder Mystery 2 Script 3\nprint("Script 3 running!")`,
-      `-- Murder Mystery 2 Script 4\nprint("Script 4 working!")`,
-      `-- Murder Mystery 2 Script 5\nprint("Script 5 executing!")`
+      "-- Murder Mystery 2 Script 1\nprint('Script 1 active!')",
+      "-- Murder Mystery 2 Script 2\nprint('Script 2 activated!')",
+      "-- Murder Mystery 2 Script 3\nprint('Script 3 running!')",
+      "-- Murder Mystery 2 Script 4\nprint('Script 4 working!')",
+      "-- Murder Mystery 2 Script 5\nprint('Script 5 executing!')"
     ];
 
     mm2Scripts.forEach((script, i) => {
       const num = i + 1;
       document.write(`
         <div class='script-box'>
-          <img src='images/mm2_${num}.jpg' alt='Murder Mystery 2 Script ${num}'>
-          <button class='copy-btn' onclick="copyScript(\`${script}\`)">Copy Script</button>
-          <div class='extra-btns'>
-            <a class='extra-btn' href='https://www.youtube.com/@skibiditech007' target='_blank'>Tutorial Download (IOS/ANDROID)</a>
-            <a class='extra-btn' href='https://deltaexploits.gg/' target='_blank'>Android/IOS Delta Executor!</a>
+          <img src="images/mm2_${num}.jpg" alt="Murder Mystery 2 Script ${num}">
+          <button class="copy-btn" onclick="navigator.clipboard.writeText(\`${script}\`).then(() => alert('Copied Script ${num}!'))">Copy Script</button>
+          <div class="extra-btns">
+            <a class="extra-btn" href="https://www.youtube.com/@skibiditech007" target="_blank">Tutorial Download (IOS/ANDROID)</a>
+            <a class="extra-btn" href="https://deltaexploits.gg/" target="_blank">Android/IOS Delta Executor!</a>
           </div>
         </div>
       `);
     });
   </script>
 </div>
+
 
 </body>
 </html>
